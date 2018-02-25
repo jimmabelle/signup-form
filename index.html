@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="container">
+<h2>Register</h2>
+<form method="get" action="https://httpbin.org/anything">
+  <input type="text" name="full name" placeholder="Full Name" />
+  <input type="email" name="email" placeholder="Email" />
+  <input type="password" placeholder="Enter Password" name="psw" required/>
+  <div class="radio-and-checkbox">
+    <input type="checkbox" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+  </div>
+  <button class="bttn">Send</button>
+</form>
+</div>
+
+<script>
+function adjust_textarea(h) {
+  h.style.height = "20px";
+  h.style.height = (h.scrollHeight)+"px";
+}
+</script>
+</body>
+</html>
